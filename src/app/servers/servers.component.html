@@ -25,7 +25,10 @@
 >
   Add Server
 </button>
+<!-- property binding -->
+<!-- <p [innerText]="allowNewServer"></p> -->
 <!-- string interpolation -->
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
 <app-server></app-server>
 <app-server></app-server>
